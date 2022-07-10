@@ -17,6 +17,6 @@ In this regard, I'm going to cover: RAM and HDD in this order.
 ### RAM
 
 For performming RAM images, I could recommend:
-- Linux/AIX: fmem(https://github.com/NateBrune/fmem). This is a great software that load a module into the kernel in order to allow the creation of a device (/dev/fmem) that can be used for dumping the memory with, for instance, dd command. Into the README file of the fmem repo, you can find the usage (very simple).
+- Linux/AIX: [fmem](https://github.com/NateBrune/fmem). This is a great software that load a module into the kernel in order to allow the creation of a device (/dev/fmem) that can be used for dumping the memory with, for instance, dd command. Into the README file of the fmem repo, you can find the usage (very simple).
 
-- Win32/64: winpmem(https://github.com/Velocidex/WinPmem)
+- Win32/64: [winpmem](https://github.com/Velocidex/WinPmem)
