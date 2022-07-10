@@ -2,7 +2,7 @@
 
 ***(Under Development)*** The main idea of the repo is, simply, provide an essential set of tools for carrying out a forensic activity in line with the [RFC 3227: "Guidelines for Evidence Collection and Archiving"](https://datatracker.ietf.org/doc/html/rfc3227) 
 
-For this purpose, when OS system particularities arise, I'll cover AIX/Linux, and Windows system, only, and the software referred will be, in all the cases, free ones.
+For this purpose, when OS system particularities arise, I'll cover AIX/Linux and Windows system, only, and the software referred will be, in all the cases, free ones.
 
 Finally, as we already know, one thing is obtain the information and, other, interpretate it and obtaining particular conclusions. The idea of the repo is covering, essentially, regardless of technical aspects, the first part. For deeper and more exahustive analysis, in particular, about memory and Volatility framework, I recommend the reading of ["The Art of Memory Forensics"](https://repo.zenk-security.com/Forensic/The%20Art%20of%20Memory%20Forensics%20-%20Detecting%20Malware%20and%20Threats%20in%20Windows,%20Linux,%20and%20Mac%20Memory%20(2014).pdf).
 
@@ -16,7 +16,7 @@ In this regard, I'll start covering: RAM and HDD/USB, in this order.
 
 ### Image creation
 
-Referred to this topic, is for pointing out that is recommended not to save the images created into the same system and, as good practice, save the images in a different partition than the system under revision, and system that are you using for performing the analysis. For instance: if you are analyzing a plausible malware infected windows system, from a Kali USB device, it's recommendable store the images in a third, let' say, USB device that operate like a sand box.
+Referred to this topic, is for pointing out that is recommended not to save the images created into the same system. Instead, as good practice, save the images in a different partition than the system under revision, and the system that are you using for performing the analysis. For instance: if you are analyzing a plausible malware infected windows system, from a Kali USB device, it's recommendable store the images in a third, let' say, USB device that operate like a sand box.
 
 #### "RAM"
 
