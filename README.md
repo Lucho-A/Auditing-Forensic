@@ -22,7 +22,13 @@ For performming RAM images, I could recommend:
 - Win32/64: [winpmem](https://github.com/Velocidex/WinPmem). Other very simple tool for creating RAM images. Just ">winpmem_mini_x64_rc2 [outputImage.raw]" and that's all.
 
 ### HDD
-In this case, I recommend just using '[dd](https://man7.org/linux/man-pages/man1/dd.1.html)' command. Remember creating images for the entire filesystem that exists (including USB's devices). If you are running an AIX/Linux machine, for sure, you already have it, but if you are running a Windows system, maybe you have to download it. [Here](http://www.chrysocome.net/downloads/dd-0.5.zip) you can find it.
+In this case, I recommend just using '[dd](https://man7.org/linux/man-pages/man1/dd.1.html)' command. Remember creating images for the entire filesystem that exists (including USB's devices). If you are running an AIX/Linux machine, for sure, you already have it, but if you are running a Windows system, maybe you have to download it. [Here](http://www.chrysocome.net/downloads/dd-0.5.zip) you can find it. 
+
+Example of usage for an USB device:
+- Linux/AIX<sup>[1]</sup>: # dd.exe if=/dev/sdc1 of="/home/userId/Forensic_Example/images/usb8gb.dd" bs=4M.
+- Win32/64: >dd.exe if=\\.\G: of="c:\Users\userId\Documents\Forensic_Example\images\usb8gb.dd" bs=4M.
+
+###### <sup>[1]</sup> remember, you can find the USB devices loaded by using the 'lsusb' command.
 
 ## Next steps
 
