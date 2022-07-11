@@ -62,7 +62,7 @@ Now, we are ready for analyzing the created images.
 
 ### "RAM"
 
-In order to analyze the RAM image, I'll show you the usage of the well-known software [Volatility](https://www.volatilityfoundation.org/). The software can be downloaded from its website. You can finde standalone versions (2.6) for Linux and Windows. However, I encourage you to obtain the latest version cloning the repo:
+In order to analyze the RAM image, I'll show you the usage of the well-known software [Volatility](https://www.volatilityfoundation.org/). The software can be downloaded from its website. You can find the standalone versions (2.6) for Linux and Windows. However, I encourage you to obtain the latest version cloning the repo:
 ```
 git clone https://github.com/volatilityfoundation/volatility
 ```
