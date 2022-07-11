@@ -1,10 +1,10 @@
 # Auditing-Forensic
 
-The main idea of the repo is, simply, provide an essential set of tools for carrying out a forensic activity in line with the [RFC 3227: "Guidelines for Evidence Collection and Archiving"](https://datatracker.ietf.org/doc/html/rfc3227) 
+The main idea of the repo is, simply, provide an essential set of tools for carrying out an starter forensic activity in line with the [RFC 3227: "Guidelines for Evidence Collection and Archiving"](https://datatracker.ietf.org/doc/html/rfc3227) 
 
 For this purpose, when OS system particularities arise, I'll cover AIX/Linux and Windows system, only, and the software referred will be, in all the cases, free ones.
 
-Finally, as we already know, one thing is obtain the information and, other, interpretate it and obtaining particular conclusions. The idea of the repo is covering, essentially, regardless of technical aspects, the first part. For deeper and more exahustive analysis, in particular, about memory and Volatility framework, I recommend the reading of ["The Art of Memory Forensics"](https://repo.zenk-security.com/Forensic/The%20Art%20of%20Memory%20Forensics%20-%20Detecting%20Malware%20and%20Threats%20in%20Windows,%20Linux,%20and%20Mac%20Memory%20(2014).pdf).
+Finally, as we already know, one thing is obtain the information and, other, interpretate it and obtaining particular conclusions. The idea of the repo is covering, essentially, regardless of technical aspects, just the first part. For deeper and more exahustive analysis, in particular, about memory and Volatility framework, I recommend the reading of ["The Art of Memory Forensics"](https://repo.zenk-security.com/Forensic/The%20Art%20of%20Memory%20Forensics%20-%20Detecting%20Malware%20and%20Threats%20in%20Windows,%20Linux,%20and%20Mac%20Memory%20(2014).pdf).
 
 ## Let's start
 
@@ -12,7 +12,8 @@ According to the RFC, some of the most important aspects to take into considerat
 - make a bit-level copy of the system's media to be audited.
 - do it, taking into consideration the volatility order.
 
-In this regard, I'll start covering: RAM and HDD/USB, in this order.
+In this regard, I'll cover: RAM and Hard Disk<sup>1</sup>, in this order.
+###### <sup>1</sup>In this context, Hard disk means any device that can storage for a long period of time the information (HDD/SSD/USB, etc.).
 
 ## Image creation
 
