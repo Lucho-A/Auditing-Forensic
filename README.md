@@ -92,11 +92,11 @@ python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_netstat
 ```
 python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_ifconfig
 ```
-  - linux_malfind, for showing suspicious process:
+  - linux_malfind, for showing suspicious processes:
 ```
 python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_malfind
 ```
-These are just some examples. The list of plugins is very extensive and you can develope your own ones if you want (the web is plenty of site where you can find useful information about it).
+These are just some examples. The list of plugins is very extensive and you can develope your own ones if you want (the web is plenty of site where you can find useful information about it and how to do it).
 
 ### "HDD/USB"
 (to be continue...)
