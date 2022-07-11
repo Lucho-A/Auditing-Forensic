@@ -53,12 +53,10 @@ Now, we are ready for analyzing the created images.
 ### "RAM"
 
 In order to analyze the RAM image, I'll show you the usage of the well-known software [Volatility](https://www.volatilityfoundation.org/). The software can be downloaded from its website. You can finde standalone versions (2.6) for Linux and Windows. However, I encourage you to obtain the latest version cloning the repo:
-
 ```
 git clone https://github.com/volatilityfoundation/volatility
 ```
 #### Some useful queries
-
 Maybe, the first "query" that you can run, in order to obtain suggestions about the image is:
 ```
 python2 vol.py -f imageRAM.lime imageinfo
@@ -67,9 +65,21 @@ However, this query takes too long and if you already know the OS associated wit
 ```
 python2 vol.py --info | grep Linux
 ```
-As you can observe running --info query, there are generics profiles, in particular, for linux. It's highly recommended to make a particular profile, according to the version of kernel associated to the image. I'll add the way to do that in future versions of the document. However, the generic profiles work pretty well for obtaining useful information.
+As you can observe running --info query, that there are generics profiles, in particular, for linux. It's highly recommended to make a particular profile, according to the version of kernel associated to the image. It's very simple, I'll add the way to do that in future versions of the document. However, the generic profiles works pretty well for obtaining useful information.
 
 Now, let's suppose that the image correspond to a linux, so you could use the profile called "LinuxSystemProfilex64".
+
+  - pslist: in order to list the processes, you can use the "plugin" linux_pslist (you can access to the plugin list by using the previous command "--info":
+```
+python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_pslist
+```
+Note: if you run the command, you can see that in the field "Start Time" the UTC used for showing the information. This is very aligned to the RFC 3227 section 2 contents.
+  - linux_netstat: show opened sockets:
+```
+python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_netstat
+```
+
+//TODO
 
 ### "HDD/USB"
 (to be continue...)
