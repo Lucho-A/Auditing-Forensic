@@ -75,9 +75,9 @@ However, this query takes too long and if you already know the OS associated wit
 ```
 python2 vol.py --info | grep Linux
 ```
-As you can observe running --info query, that there are generics profiles, in particular, for linux. It's highly recommended to make a particular profile, according to the version of kernel associated to the image. It's very simple, I'll add the way to do that in future versions of the document. However, the generic profiles works pretty well for obtaining useful information.
+As you can observe, running --info query, is that there are generics profiles. It's highly recommended to make a particular one, according to the version of the kernel associated to the image. It's very simple, I'll add the way to do it in future versions of the document. However, the generic profiles works pretty well for obtaining useful information.
 
-Now, let's suppose that the image correspond to a linux, so you could use the profile called "LinuxSystemProfilex64".
+Now, let's suppose that the image correspond to a linux, so you could use the generic profile called "LinuxSystemProfilex64".
 
   - linux_pslist: in order to list the processes, you can use this "plugin" (you can access to the plugin list by running the programm with parameter "--info":
 ```
