@@ -98,7 +98,7 @@ python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_malfind
 ```
 These are just some examples. The list of plugins is very extensive and you can develope your own ones if you want (the web is plenty of site where you can find useful information about it and how to do it).
 
-It remains to say that for Win32/64 is the same. Summarizing: with python (v2 preferred) installed, you clone the Volatility repo, find the info of the image with "imageinfo" option (if you don't know the OS spec of the image or if you want to document, for workingpaper or evidence recording of the process), find the most appropriate "profile" (even better, create your own<sup>1</sup>), and starting the analysis by using the plugins.
+It remains to say that for Win32/64 is the same. Summarizing: with python (v2 preferred) installed, you clone the Volatility repo, find the info of the image with "imageinfo" option (if you don't know the OS spec of the image or if you want to document, for working-papers or evidence recording of the process), find the most appropriate "profile" (even better, create your own<sup>1</sup>), and starting the analysis by using the plugins.
 
 <sup>1</sup> keep in mind the recommendation of profiles generation in thirds devices and avoid the information processing in the device to be audited.
 
