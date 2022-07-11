@@ -20,18 +20,16 @@ Referred to this topic, is for pointing out that is recommended not to save the 
 
 #### "RAM"
 
-- For performming RAM images, I could recommend:
+For performming RAM images, I could recommend:
 - Linux/AIX: 
   - [LiME](https://github.com/504ensicsLabs/LiME). Due to its simplicity, and the probed compatibility with Volatility, this is my first option. It's an LKM, and its usage is very well descripted into the repo. For instace:
-
 ```
-git clone https://github.com/504ensicsLabs/LiME // in order to obtain the latest version
+git clone https://github.com/504ensicsLabs/LiME
 cd src/
 make
 sudo insmod lime-X.XX-XX.ko "path=/home/userId/.../.../dumpRAM.lime format=lime"
 ```
-
-  - [fmem](https://github.com/NateBrune/fmem). This is other great software that load a module into the kernel in order to allow the creation of a device (/dev/fmem) that can be used for dumping the memory with, for instance, 'dd' command. Into the README file of the fmem repo, you can find the way of usage.
+   - [fmem](https://github.com/NateBrune/fmem). This is other great software that load a module into the kernel in order to allow the creation of a device (/dev/fmem) that can be used for dumping the memory with, for instance, 'dd' command. Into the README file of the fmem repo, you can find the way of usage.
 
 Note: if you run the 'dd' command for dumping the memory, take into consideration the use of count parameter. Indeed, if not, as is mentioned in the fmem repo, the dumping could never stop or, even worst, a segmentation fault can arise. So, I recommend you using 1MB as bs, and the sum of the sizes displayed by 'fmem' command after loaded as count. 
 
@@ -46,7 +44,7 @@ Example of usage for an USB device:
 
 ###### <sup>1</sup> remember, you can find the USB devices loaded by using the 'lsusb' command, and/or the partitions using 'fdisk -l'.
 
-## Next steps
+## Next steps. Analizing Data.
 
 Now, we are ready for analyzing the created images. 
 
@@ -57,8 +55,20 @@ In order to analyze the RAM image, I'll show you the usage of the well-known sof
 ```
 git clone https://github.com/volatilityfoundation/volatility
 ```
+#### Some useful queries
 
+Maybe, the first "query" that you can run, in order to obtain suggestions about the image is:
+```
+python2 vol.py -f imageRAM.lime imageinfo
+```
 
+However, this query takes too long and if you already know the OS associated with the image, maybe you want to skip this query and search for a profile according to the OS, for instance:
+```
+python2 vol.py --info | grep Linux
+```
+As you can observe running --info query, there are generics profiles, in particular, for linux. It's highly recommended to make a particular profile, according to the version of kernel associated to the image. I'll add the way to do that in future versions of the document. However, the generic profiles work pretty well for obtaining useful information.
+
+Now, let's suppose that the image correspond to a linux, so you could use the profile called "LinuxSystemProfilex64".
 
 #### "HDD/USB"
 (to be continue...)
