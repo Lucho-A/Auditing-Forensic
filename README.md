@@ -13,7 +13,7 @@ According to the RFC, some of the most important aspects to take into considerat
 - do it, taking into consideration the volatility order.
 
 In this regard, I'll cover: RAM and Hard Disk<sup>1</sup>, in this order.
-###### <sup>1</sup>In this context, Hard disk means any device that can storage for a long period of time the information (HDD/SSD/USB, etc.).
+###### <sup>1</sup>In this context, the term "hard disk" means any device that can keep storaged the information for a long period of time (HDD/SSD/USB, etc.).
 
 ## Image creation
 
@@ -42,7 +42,7 @@ winpmem_mini_x64_rc2 [path_to_outputImage.raw]
 ```
 ... and that's all.
 
-### "HDD/USB"
+### "Hard Disks"
 In this case, I recommend just using '[dd](https://man7.org/linux/man-pages/man1/dd.1.html)' command. Remember creating images for the entire filesystem involved (including different partitions, and USB's devices). If you are running an AIX/Linux machine, for sure, you already have it, but if you are running a Windows system, maybe you need to download it. [Here](http://www.chrysocome.net/downloads/dd-0.5.zip) you can find it. 
 
 Example of usage for an USB device:
@@ -106,7 +106,7 @@ Summarizing: with python (v2 preferred) installed, you clone the Volatility repo
 
 ###### <sup>1</sup> keep in mind the recommendation of profiles generation in thirds devices and avoid the information processing in the device to be audited.
 
-### "HDD/USB"
+### "Hard Disks"
 
 In this case, I'll cover the subject using the software [Autopsy](https://www.autopsy.com/). This soft is pretty simple to use, and is very aligned to forensic formal procedures. Moreover, it allows you to create "Cases" when you start an investigation allowing the incorporation of useful information in order to keep well-documented the revision.
 
