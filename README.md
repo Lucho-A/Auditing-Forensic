@@ -17,7 +17,7 @@ In this regard, I'll cover: RAM and Hard Disk<sup>1</sup>, in this order.
 
 ## Image creation
 
-Referred to this topic, is for pointing out that is recommended not to save the images created into the same system. Instead, as good practice, save the images in a different partition than the system under revision, and the system that are you using for performing the analysis. For instance: if you are analyzing a plausible malware infected windows system from a Kali USB device, it's recommendable store the images in a third, let' say, USB device that operate like a sand box.
+Referred to this topic, is for pointing out that is recommended not to save the images created into the same system. Instead, as good practice, save the images in a different partition than the system under revision, and the system that you are using for performing the analysis. For instance: if you are analyzing a plausible malware infected windows system from a Kali USB device, it's recommendable store the images in a third, let' say, USB device that operate like a sand box.
 
 ### "RAM"
 
