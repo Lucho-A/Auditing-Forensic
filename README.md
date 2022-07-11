@@ -88,8 +88,15 @@ Note: if you run the command, you can see that in the field "Start Time" the UTC
 ```
 python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_netstat
 ```
-
-//TODO
+  - linux_ifconfig: show active interfaces:
+```
+python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_ifconfig
+```
+  - linux_malfind: show suspicious process:
+```
+python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_malfind
+```
+These are just some examples. The list of plugins is very extensive and you can develope your own ones if you want (the web is plenty of site where you can find useful information about it).
 
 ### "HDD/USB"
 (to be continue...)
