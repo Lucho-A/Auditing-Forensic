@@ -20,8 +20,16 @@ Referred to this topic, is for pointing out that is recommended not to save the 
 
 #### "RAM"
 
-For performming RAM images, I could recommend:
-- Linux/AIX: [fmem](https://github.com/NateBrune/fmem). This is a great software that load a module into the kernel in order to allow the creation of a device (/dev/fmem) that can be used for dumping the memory with, for instance, 'dd' command. Into the README file of the fmem repo, you can find, very well descripted, the way of usage.
+- For performming RAM images, I could recommend:
+- Linux/AIX: 
+  - [LiME](https://github.com/504ensicsLabs/LiME). Due to compatibility with Volatility and probed efficiency, this is my first option. It's an LKM, and its usage is very well descripted into the repo. For instace:
+  1. git clone https://github.com/504ensicsLabs/LiME // in order to obtain the latest version
+  2. cd src/
+  3. make
+  4. sudo insmod lime-X.XX-XX.ko "path=/home/userId/.../.../dumpRAM.lime format=lime"
+  - [fmem](https://github.com/NateBrune/fmem). This is a great software that load a module into the kernel in order to allow the creation of a device (/dev/fmem) that can be used for dumping the memory with, for instance, 'dd' command. Into the README file of the fmem repo, you can find, very well descripted, the way of usage.
+
+Note: if you run the 'dd' command for dumping the memory, take into consideration the use of count parameter. Indeed, if not, as is mentioned in the fmem repo, the dumping could never stop or, even worst, a segmentation fault can arise. So, I recommend you using 1MB as bs, and the sum of the sizes displayed by 'fmem' command after loaded as count. 
 
 - Win32/64: [winpmem](https://github.com/Velocidex/WinPmem). Other very simple tool for creating RAM images. Just "> winpmem_mini_x64_rc2 [path_to_outputImage.raw]" and that's all.
 
