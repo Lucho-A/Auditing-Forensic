@@ -35,15 +35,24 @@ sudo insmod lime-X.XX-XX.ko "path=/home/userId/.../.../dumpRAM.lime format=lime"
 Note: if you run the 'dd' command for dumping the memory, take into consideration the use of count parameter. Indeed, if not, as is mentioned in the fmem repo, the dumping could never stop or, even worst, a segmentation fault can arise. So, I recommend you using 1MB as bs, and the sum of the sizes displayed by 'fmem' command after loaded as count. 
 
 ***Win32/64***:
-  - [winpmem](https://github.com/Velocidex/WinPmem). Other very simple tool for creating RAM images. Just "> winpmem_mini_x64_rc2 [path_to_outputImage.raw]" and that's all.
+  - [winpmem](https://github.com/Velocidex/WinPmem). Other very simple tool for creating RAM images. Just:
+```
+winpmem_mini_x64_rc2 [path_to_outputImage.raw]
+```
+... and that's all.
 
 ### "HDD/USB"
 In this case, I recommend just using '[dd](https://man7.org/linux/man-pages/man1/dd.1.html)' command. Remember creating images for the entire filesystem involved (including different partitions, and USB's devices). If you are running an AIX/Linux machine, for sure, you already have it, but if you are running a Windows system, maybe you have to download it. [Here](http://www.chrysocome.net/downloads/dd-0.5.zip) you can find it. 
 
 Example of usage for an USB device:
-- Linux/AIX<sup>1</sup>: # dd.exe if=/dev/sdc1 of="path_to_outputImage.dd" bs=4M.
-- Win32/64: > dd.exe if=\\.\G: of="path_to_outputImage.dd" bs=4M.
-
+***Linux/AIX***<sup>1</sup>:
+```
+sudo dd.exe if=/dev/sdc1 of=path_to_outputImage.dd bs=4M
+```
+***Win32/64***:
+```
+dd.exe if=\\.\G: of=path_to_outputImage.dd bs=4M
+```
 ###### <sup>1</sup> remember, you can find the USB devices loaded by using the 'lsusb' command, and/or the partitions using 'fdisk -l'.
 
 ## Next steps. Analizing Data.
