@@ -22,12 +22,16 @@ Referred to this topic, is for pointing out that is recommended not to save the 
 
 - For performming RAM images, I could recommend:
 - Linux/AIX: 
-  - [LiME](https://github.com/504ensicsLabs/LiME). Due to compatibility with Volatility and probed efficiency, this is my first option. It's an LKM, and its usage is very well descripted into the repo. For instace:
-  1. git clone https://github.com/504ensicsLabs/LiME // in order to obtain the latest version
-  2. cd src/
-  3. make
-  4. sudo insmod lime-X.XX-XX.ko "path=/home/userId/.../.../dumpRAM.lime format=lime"
-  - [fmem](https://github.com/NateBrune/fmem). This is a great software that load a module into the kernel in order to allow the creation of a device (/dev/fmem) that can be used for dumping the memory with, for instance, 'dd' command. Into the README file of the fmem repo, you can find, very well descripted, the way of usage.
+  - [LiME](https://github.com/504ensicsLabs/LiME). Due to the probed compatibility with Volatility, this is my first option. It's an LKM, and its usage is very well descripted into the repo. For instace:
+
+```
+git clone https://github.com/504ensicsLabs/LiME // in order to obtain the latest version
+cd src/
+make
+sudo insmod lime-X.XX-XX.ko "path=/home/userId/.../.../dumpRAM.lime format=lime"
+```
+
+  - [fmem](https://github.com/NateBrune/fmem). This is other great software that load a module into the kernel in order to allow the creation of a device (/dev/fmem) that can be used for dumping the memory with, for instance, 'dd' command. Into the README file of the fmem repo, you can find the way of usage.
 
 Note: if you run the 'dd' command for dumping the memory, take into consideration the use of count parameter. Indeed, if not, as is mentioned in the fmem repo, the dumping could never stop or, even worst, a segmentation fault can arise. So, I recommend you using 1MB as bs, and the sum of the sizes displayed by 'fmem' command after loaded as count. 
 
@@ -43,5 +47,16 @@ Example of usage for an USB device:
 ###### <sup>1</sup> remember, you can find the USB devices loaded by using the 'lsusb' command, and/or the partitions using 'fdisk -l'.
 
 ## Next steps
+
+Now, we are ready for analyzing the created images. 
+
+#### "RAM"
+
+In order to analyze the RAM image, I'll show you the usage of the well-known software [Volatility](https://www.volatilityfoundation.org/). The software can be downloaded from its website. You can finde standalone versions (2.6) for Linux and Windows. However, I encourage you to obtain the latest version cloning the repo:
+
+```
+git clone https://github.com/volatilityfoundation/volatility
+```
+
 
 (to be continue...)
