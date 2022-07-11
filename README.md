@@ -118,4 +118,4 @@ Others nice features are:
   - Geolocation: in case that files have incoporated geolocation information, you can track it.
   - Timeline: you can show the "evolution" of files in the time.
 
-Anyway, that's all folks! (at least, for now... maybe, I incoporate deeper technical stuff and real cases in a future... who knows! hhaha). I hope you've found useful the contents of this repo. Any suggestion, comments, or whatever hhahah, just let me know! (luis.alfie@gmail.com)
+Anyway, that's all folks! (at least, for now... maybe, I incorporate deeper technical stuff and real cases in a future in this, or other repo... who knows! hhaha). I hope you've found useful the contents of this repo. Any suggestion, comments, or whatever hhahah, just let me know! (luis.alfie@gmail.com)
