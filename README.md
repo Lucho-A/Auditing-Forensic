@@ -105,4 +105,6 @@ Summarizing: with python (v2 preferred) installed, you clone the Volatility repo
 ###### <sup>1</sup> keep in mind the recommendation of profiles generation in thirds devices and avoid the information processing in the device to be audited.
 
 ### "HDD/USB"
+
+In this case, I'll cover the subject using the software [Autopsy](https://www.autopsy.com/). This soft is pretty simple to use, and is very aligned to forensic formal procedures. Moreover, it allows you to create "Cases" when you start an investigation or 
 (to be continue...)
