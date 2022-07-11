@@ -1,6 +1,6 @@
 # Auditing-Forensic
 
-***(Under Development)*** The main idea of the repo is, simply, provide an essential set of tools for carrying out a forensic activity in line with the [RFC 3227: "Guidelines for Evidence Collection and Archiving"](https://datatracker.ietf.org/doc/html/rfc3227) 
+The main idea of the repo is, simply, provide an essential set of tools for carrying out a forensic activity in line with the [RFC 3227: "Guidelines for Evidence Collection and Archiving"](https://datatracker.ietf.org/doc/html/rfc3227) 
 
 For this purpose, when OS system particularities arise, I'll cover AIX/Linux and Windows system, only, and the software referred will be, in all the cases, free ones.
 
