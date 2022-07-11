@@ -14,11 +14,11 @@ According to the RFC, some of the most important aspects to take into considerat
 
 In this regard, I'll start covering: RAM and HDD/USB, in this order.
 
-### Image creation
+## Image creation
 
 Referred to this topic, is for pointing out that is recommended not to save the images created into the same system. Instead, as good practice, save the images in a different partition than the system under revision, and the system that are you using for performing the analysis. For instance: if you are analyzing a plausible malware infected windows system, from a Kali USB device, it's recommendable store the images in a third, let' say, USB device that operate like a sand box.
 
-#### "RAM"
+### "RAM"
 
 For performming RAM images, I could recommend:
 
@@ -37,7 +37,7 @@ Note: if you run the 'dd' command for dumping the memory, take into consideratio
 ***Win32/64***:
   - [winpmem](https://github.com/Velocidex/WinPmem). Other very simple tool for creating RAM images. Just "> winpmem_mini_x64_rc2 [path_to_outputImage.raw]" and that's all.
 
-#### "HDD/USB"
+### "HDD/USB"
 In this case, I recommend just using '[dd](https://man7.org/linux/man-pages/man1/dd.1.html)' command. Remember creating images for the entire filesystem involved (including different partitions, and USB's devices). If you are running an AIX/Linux machine, for sure, you already have it, but if you are running a Windows system, maybe you have to download it. [Here](http://www.chrysocome.net/downloads/dd-0.5.zip) you can find it. 
 
 Example of usage for an USB device:
@@ -50,7 +50,7 @@ Example of usage for an USB device:
 
 Now, we are ready for analyzing the created images. 
 
-#### "RAM"
+### "RAM"
 
 In order to analyze the RAM image, I'll show you the usage of the well-known software [Volatility](https://www.volatilityfoundation.org/). The software can be downloaded from its website. You can finde standalone versions (2.6) for Linux and Windows. However, I encourage you to obtain the latest version cloning the repo:
 
@@ -71,5 +71,5 @@ As you can observe running --info query, there are generics profiles, in particu
 
 Now, let's suppose that the image correspond to a linux, so you could use the profile called "LinuxSystemProfilex64".
 
-#### "HDD/USB"
+### "HDD/USB"
 (to be continue...)
