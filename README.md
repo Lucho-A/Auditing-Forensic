@@ -79,20 +79,20 @@ As you can observe running --info query, that there are generics profiles, in pa
 
 Now, let's suppose that the image correspond to a linux, so you could use the profile called "LinuxSystemProfilex64".
 
-  - pslist: in order to list the processes, you can use the "plugin" linux_pslist (you can access to the plugin list by using the previous command "--info":
+  - linux_pslist: in order to list the processes, you can use this "plugin" (you can access to the plugin list by running the programm with parameter "--info":
 ```
 python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_pslist
 ```
 Note: if you run the command, you can see that in the field "Start Time" the UTC used for showing the information. This is very aligned to the RFC 3227 section 2 contents.
-  - linux_netstat: show opened sockets:
+  - linux_netstat, for showing opened sockets:
 ```
 python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_netstat
 ```
-  - linux_ifconfig: show active interfaces:
+  - linux_ifconfig, for showing active interfaces:
 ```
 python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_ifconfig
 ```
-  - linux_malfind: show suspicious process:
+  - linux_malfind, for showing suspicious process:
 ```
 python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_malfind
 ```
