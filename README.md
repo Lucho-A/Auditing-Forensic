@@ -79,7 +79,7 @@ As you can observe, running --info query, is that there are generics profiles. I
 
 Now, let's suppose that the image correspond to a linux, so you could use the generic profile called "LinuxSystemProfilex64".
 
-  - linux_pslist: in order to list the processes, you can use this "plugin" (you can access to the plugin list by running the programm with parameter "--info":
+  - linux_pslist: in order to list the processes, you can use this "plugin" (you can access to the plugin list by running the program with parameter "--info":
 ```
 python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_pslist
 ```
