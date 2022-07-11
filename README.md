@@ -108,11 +108,14 @@ Summarizing: with python (v2 preferred) installed, you clone the Volatility repo
 
 In this case, I'll cover the subject using the software [Autopsy](https://www.autopsy.com/). This soft is pretty simple to use, and is very aligned to forensic formal procedures. Moreover, it allows you to create "Cases" when you start an investigation allowing the incorporation of useful information in order to keep well-documented the revision.
 
-The interface is, let say, very auto-descriptive and, among its features, you can find filters of any type making easier the obtantion of useful information, namely:
+The interface is, let say, very auto-descriptive and, among its features, you can find filters of any type making easier the obtaining of useful information, for instance:
   - OS Users
   - Emails
   - Deleted files
-  - 
+  - File sizes & types filters, among others.
 
+Others nice features are: 
+  - Geolocation: in case that files have incoporated geolocation information, you can track it.
+  - Timeline: you can show the "evolution" of files in the time.
 
-
+Anyway, that's all folks! (at least, for now). I hope you've found useful the contents of this repo. Any suggestion, comments, or whatever hhahah, just let me know! (luis.alfie@gmail.com)
