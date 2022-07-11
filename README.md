@@ -98,7 +98,8 @@ python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_malfind
 ```
 These are just some examples. The list of plugins is very extensive and you can develope your own ones if you want (the web is plenty of site where you can find useful information about it and how to do it).
 
-It remains to say that for Win32/64 is the same. 
+It remains to say that for Win32/64 is the same. Taking about Windows, let me tell you that into the book I recommended (more precisely, page 118), you can find very well described a list of objects and structures that you can find interestings at the moment of analysing an image. 
+
 
 Summarizing: with python (v2 preferred) installed, you clone the Volatility repo, find the info of the image with "imageinfo" option (if you don't know the OS spec of the image or if you want to document the process for working-papers or evidence recording), find the most appropriate "profile" (even better, create your own<sup>1</sup>), and starting the analysis by using the plugins.
 
@@ -118,4 +119,4 @@ Others nice features are:
   - Geolocation: in case that files have incoporated geolocation information, you can track it.
   - Timeline: you can show the "evolution" of files in the time.
 
-Anyway, that's all folks! (at least, for now... maybe, I incorporate deeper technical stuff and real cases in a future in this, or other repo... who knows! hhaha). I hope you've found useful the contents of this repo. Any suggestion, comments, or whatever hhahah, just let me know! (luis.alfie@gmail.com)
+Anyway, that's all folks! (at least, for now... hhaha). I hope you've found useful the contents of this repo. Any suggestion, comments, or whatever hhahah, just let me know! (luis.alfie@gmail.com)
