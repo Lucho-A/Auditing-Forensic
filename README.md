@@ -42,7 +42,7 @@ winpmem_mini_x64_rc2 [path_to_outputImage.raw]
 ... and that's all.
 
 ### "HDD/USB"
-In this case, I recommend just using '[dd](https://man7.org/linux/man-pages/man1/dd.1.html)' command. Remember creating images for the entire filesystem involved (including different partitions, and USB's devices). If you are running an AIX/Linux machine, for sure, you already have it, but if you are running a Windows system, maybe you have to download it. [Here](http://www.chrysocome.net/downloads/dd-0.5.zip) you can find it. 
+In this case, I recommend just using '[dd](https://man7.org/linux/man-pages/man1/dd.1.html)' command. Remember creating images for the entire filesystem involved (including different partitions, and USB's devices). If you are running an AIX/Linux machine, for sure, you already have it, but if you are running a Windows system, maybe you need to download it. [Here](http://www.chrysocome.net/downloads/dd-0.5.zip) you can find it. 
 
 Example of usage for an USB device:
 
