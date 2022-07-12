@@ -84,7 +84,7 @@ Now, let's suppose that the image correspond to a linux, so you could use the ge
 ```
 python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_pslist
 ```
-Note: if you run the command, you can see that in the field "Start Time" the UTC used for showing the information. This is very aligned to the RFC 3227 section 2 contents.
+Note: if you run the command, you can see that in the field "Start Time" the UTC used for showing the information. This is very aligned with the contents of the RFC 3227, section 2.
   - linux_netstat, for showing opened sockets:
 ```
 python2 vol.py -f imageRAM.lime --profile=LinuxSystemProfilex64 linux_netstat
