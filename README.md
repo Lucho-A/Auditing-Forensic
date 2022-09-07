@@ -24,7 +24,7 @@ Referred to this topic, is for pointing out that is recommended not to save the 
 For performming RAM images, I could recommend:
 
 ***Linux/AIX***: 
-  - [LiME](https://github.com/504ensicsLabs/LiME). Due to its simplicity, and the probed compatibility with Volatility, this is my first option. It's an LKM, and its usage is very well descripted into the repo. For instace:
+  - [LiME](https://github.com/504ensicsLabs/LiME). Due to its simplicity, and the probed compatibility with Volatility, this is my first option. It's an LKM, and its usage is very well descripted into the repo. For instance:
 ```
 git clone https://github.com/504ensicsLabs/LiME
 cd src/
